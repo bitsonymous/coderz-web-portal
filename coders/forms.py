@@ -6,14 +6,14 @@ class CoderForm(forms.ModelForm):
         model = Coders
         fields = ['coder_number', 'first_name', 'last_name', 'lc_id', 'rating']
         labels = {
-            'coder_number' : 'Phone Number', 
+            'coder_number' : 'Last 4 Digit of Phone', 
             'first_name' : 'First Name' ,
             'last_name' : 'Last Name' ,
             'lc_id' : 'Leetcode Username',
             'rating' : 'Rating'
         }
         widgets = {
-            'coder_number' : forms.TextInput(attrs={'class' : 'form-control'}), 
+            'coder_number' : forms.NumberInput(attrs={'class' : 'form-control'}), 
             'first_name' : forms.TextInput(attrs={'class' : 'form-control'}), 
             'last_name' : forms.TextInput(attrs={'class' : 'form-control'}),
             'lc_id' : forms.TextInput(attrs={'class' : 'form-control'}),
