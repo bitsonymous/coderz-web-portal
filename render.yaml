@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: django_project
+    buildCommand: "./build.sh"
+    env: python
+    startCommand: "gunicorn your_django_app_name.wsgi:application"
