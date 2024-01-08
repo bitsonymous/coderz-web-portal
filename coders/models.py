@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here. database
 class Coders(models.Model):
-    coder_number = models.PositiveIntegerField()
+    coder_number = models.CharField()
     first_name = models.CharField(max_length=12)
     last_name = models.CharField(max_length=12)
     lc_id = models.CharField(max_length=50)
