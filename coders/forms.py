@@ -13,7 +13,7 @@ class CoderForm(forms.ModelForm):
             'rating' : 'Rating'
         }
         widgets = {
-            'coder_number' : forms.NumberInput(attrs={'class' : 'form-control'}), 
+            'coder_number' : forms.TextInput(attrs={'class' : 'form-control'}), 
             'first_name' : forms.TextInput(attrs={'class' : 'form-control'}), 
             'last_name' : forms.TextInput(attrs={'class' : 'form-control'}),
             'lc_id' : forms.TextInput(attrs={'class' : 'form-control'}),
